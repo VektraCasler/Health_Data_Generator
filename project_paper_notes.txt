@@ -1,0 +1,45 @@
+-------------------------------------
+Questions to answer about the project
+-------------------------------------
+
+What is this project?
+
+Why did you create it?
+
+Who is it for?
+
+How will it help?
+
+How did you create this project?
+
+Which data sources did you use?
+
+    DEMOGRAPHIC DATA
+
+    FACILITY COMPOSITION DATA
+
+    TEST ORDERING DATA
+
+    LAB VALUE DATA
+
+What data does it generate?
+
+What are some features of this generation?
+
+How does simulated data compare to real data?
+
+What are some limitations of this simulated data?
+
+    1.  Only healthy population distributions
+    2.  No disease process bias
+    3.  Only USA addresses
+
+How will you distribute this tool to other users?
+
+How will you support this project long term?
+
+What features do you wish to add to this project?
+
+    1.  Additional data types (molecular testing method simulation, AP reporting field searches)
+    2.  Data corruption simulation and non-standard character injection
+
