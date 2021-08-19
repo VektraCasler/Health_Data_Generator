@@ -1,5 +1,11 @@
 Scripts included within this toolset:
 
+-------
+main.py
+-------
+
+Eventually, this will be a master script to launch all others in sequence.  This will create all files as necessary with default values.
+
 -------------------
 person_generator.py
 -------------------
@@ -46,6 +52,7 @@ This test will skim off a number of appropriately aged individuals from the OUTP
 
 - Provider Number
 - Provider Type (nurse, doctor, phlebotomist, med-tech, PA)
+- Provider ID (per CMS guidelines -- 00X0000 or 0000000)
 - Provider Location
 - Specialty
 

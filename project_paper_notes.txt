@@ -4,9 +4,24 @@ Questions to answer about the project
 
 What is this project?
 
+This is a procedural patient clinical testing data generator.  It uses pseudo-randomized number generation to generate patient data fields, based on weighted choices (where possible) and mathematical formulae.  Weighted choices incorporate data from internet sources to approximate population distributions which resemble real-world data as closely as possible.  Mathematical formulae model probability distribution functions, such as normal curves, inverse relationships, or surge functions where possible.  These formulae are then used to generate patient data, which, when taken in aggregate, would demonstrate probability distributions of those types.  
+
+Ultimately, this script simulates a population of patients which undergo clinical testing over various analytes.  Patients are either admitted to a theoretical hospital for a stay of procedurally determined length, or remain outpatient and are chosen at random to undergo procedural clinical testing.  The output of this script is a large collection of medical data -- a flat database (comma-separated value file), which holds dozens of fields for millions of records.
+
 Why did you create it?
 
+Patient health information enjoys protections from access to minimize risk to the patient.  Unscrupulous use of this data can be damaging and detrimental to the health and well-being of the individual, and so it is protected by several laws and governing bodies, not least of which is the Health Insurance Portability and Accountability Act (HIPAA) under the watchful eye of the US Department of Health and Human Services.  Health care providers are beholden to these laws and have restricted access to patient data for testing or research purposes.
+
+To minimize risk to actual patients, synthetic data can be used to:
+
+- Construct clinical investigatory pipelines in preparation for actual data
+- Bolster AI training pools with "true negative" data, minimizing the need for pulling real patient data
+- Facilitate AI quality control testing
+- Construct quality control pipelines and dashboards
+
 Who is it for?
+
+
 
 How will it help?
 
