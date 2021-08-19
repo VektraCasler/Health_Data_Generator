@@ -33,7 +33,7 @@ Example projects include:
    - Build dashboards for any of these investigations.
    - Organize learning modules for trainees around assessing data and various quality metrics (L-J plots, Youden charts, etc.)
 
-5b.  Who else is curently doing this?
+5b.  Who else is currently doing this?
 
 I've encountered one commercial enterprise that provides synthetic healthcare data for testing.  I'm currently awaiting an appointment to talk with them about their data generation capabilities and focus of their product.  From the cursory website information, this appears to be more of an EMR type of data generation, for generating patient encounters and notes, as opposed to clinical laboratory data, which this project focuses on.  They have published a few papers on their validation methods of their data, as well as how their AI tools for generating the data were themselves created.
 
@@ -116,9 +116,11 @@ Changing to a different data structure or programming language may be necessary.
 
 More Data Types: Future iterations of this project will also include expansions of datafields generated.  Most of my experience is with clinical laboratory field data at the moment, but with 90K LOINC codes, any manner of health care testing data (which fits into a flat file format) could be generated.  Future data outputs might include synthetic molecular data for constructing NGS pipelines, or graphical data, such as heart rhythm tracings or other imaging data.
 
-Optional flags to generate different types of data for software/script error testing.  Perhaps inject 'corrupted' data fields with missing/null values, non-standard characters in text fields, and 'data dirtying' subroutines to allow pipeline developers to construct data-wrangling scripts and tools.
+Optional flags to generate different types of data for software/script error testing.  Perhaps inject 'corrupted' data fields with missing/null values (Cancelled or open/unresulted orders), non-standard characters in text fields, and 'data dirtying' subroutines to allow pipeline developers to construct data-wrangling scripts and tools. 
 
 Data field toggles: One important feature would be the ability to turn on and off various datafields which are unlikely to be necessary in whatever investigation the user is undertaking.  Flat data files compound their file sizes rapidly for each data field added.  File sizes could quickly become unusably large in this instance.
+
+HL7 message streaming: Create a utility which will allow the passing of these database entries as HL7 messages.
 
 15.  How does this project promote the scientific community?  
 
