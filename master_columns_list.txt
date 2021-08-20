@@ -1,13 +1,34 @@
 PATIENT
 -------
-<Demographics>
+name
+surname 
+middle_name
+name_suffix
+age 
+race 
+ethnicity
+social_security_number
+date_of_birth
+medical_record_number
+street
+city
+county
+state 
+zip
+cell_phone
+home_phone
+work_phone
+email
+
+ENCOUNTER
+---------
 patient_type [inpatient, outpatient]
 icd_10_code
-admit_date
+encounter_timestamp
 
 SPECIMENS
 ---------
-specimen_type [whole_blood,serum,plasma,urine,id,others...]
+specimen_type [whole_blood,serum,plasma,urine,CSF,etc]
 specimen_id
 drawn_timestamp
 received_timestamp
