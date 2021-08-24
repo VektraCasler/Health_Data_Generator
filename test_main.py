@@ -3,15 +3,23 @@ import main # We will be testing the "main.py" functions
 import unittest # To ensure no breaking of functionality during commits
 
 # Classes
-class UnitTests(unittest.TestCase):
-    '''
-    This class will eventually test the functions in "main" to ensure that nothing
-    major is broken between commits.
-    '''
+class TestSSN(unittest.TestCase):
+    # This class tests the functionality of generate_SSN()
 
-    # An example test
-    def test_sum(self):
-        self.assertEqual(sum([1, 2, 3]), 6, "function sum() command does not work.")
+    def test_generate_SSN_returns_string(self):
+        # Ensure that a string is returned from generate_SSN()
+        test = main.generate_SSN()
+        assert isinstance(test, str)
+        
+    
+class TestSurname(unittest.TestCase):
+    # This class tests the functionality of generate_surname()
+
+    # Tests generate_SSN
+    def test_generate_surname_returns_string(self):
+        # Ensure that a string is returned from generate_SSN()
+        test = main.generate_surname("Asian", "Not Hispanic", "Female")
+        assert isinstance(test, str)
 
 
 if __name__ == "__main__":

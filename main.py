@@ -80,6 +80,8 @@ def generate_sex():
 
     ''' Randomly generates a person sex, with only male/female options. '''
 
+    # Optimization: we can remove .strip and .capitalize
+    # if we assert in a future unit-test that PERSON_SEXES contains "Male" and "Female"
     return random.choice(PERSON_SEXES).strip().capitalize()
 
 def generate_age(person_sex):
