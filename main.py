@@ -389,7 +389,7 @@ def update_provider_name(provider_type, provider_name):
     elif provider_type == 'Physician assistants':
         provider_name += ' PA-C'
 
-    else: # Provider_type == "Physcians"
+    else: # Provider_type == "Physicians"
 
         # approximately 9:1 DO:MD ratio
         if random.random() > 0.9:
