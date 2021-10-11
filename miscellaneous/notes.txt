@@ -1,9 +1,0 @@
-Sources of General Info
-
-
-https://www.healthit.gov/isa/uscdi-data-class/patient-demographics#uscdi-v1
-
-https://www.pewresearch.org/internet/fact-sheet/mobile/#:~:text=Mobile%20phone%20ownership%20over%20time,a%20cellphone%20of%20some%20kind.
-https://www.statista.com/chart/2072/landline-phones-in-the-united-states/
-https://en.wikipedia.org/wiki/List_of_North_American_Numbering_Plan_area_codes
-https://en.wikipedia.org/wiki/Telephone_prefix#United_States_prefixes
